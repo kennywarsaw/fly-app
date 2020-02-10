@@ -1,7 +1,19 @@
 .listWrapper_wrapper {
     width: 50vw;
     margin: 0 auto;
-    background-color: #f4f8fb;
+    background-color: #00000008;
     border-radius: 8px;
     padding: 8px;
+}
+
+@media only screen and (max-width: 812px) {
+    .listWrapper_wrapper {
+        width: 100vw;
+    }
+    .listItem__date, .listItem__country {
+        display: none;
+    }
+    .listItem__departure, .listItem__arrival {
+        font-size: 16px;;
+    }
 }
