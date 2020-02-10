@@ -1,0 +1,67 @@
+.listItem__wrapper {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    margin: 12px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 23px 0 rgba(218, 236, 254, 0.4);
+}
+
+.listItem__left {
+    float: left;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+}
+
+.listItem__right {
+    float: right;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+}
+
+.listItem__image {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+}
+
+.listItem__date {
+    font-size: 12px;
+    color: #1d2125;
+    background-color: #f4f8fb;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: 300;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.listItem__departure {
+    font-size: 24px;
+    color: #0775e2;
+    font-weight: 300;
+    margin-right: 0;
+}
+
+.listItem__arrival {
+    font-size: 24px;
+    color: #0775e2;;
+    font-weight: 300;
+    border-bottom: 1px solid #bcd5f5;
+    margin-left: 0;
+}
+
+.listItem__country {
+    font-size: 12px;
+    color: #1d2125;
+    background-color: #f4f8fb;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-right: auto;
+}
