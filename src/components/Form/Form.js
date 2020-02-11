@@ -41,7 +41,7 @@ const Form = ({submitFn}) => (
             <div className="form__item">
                 <input 
                     type="text"
-                    placeholder=" " 
+                    placeholder=" test " 
                     name="country" 
                     id="country"
                     maxLength="30"
