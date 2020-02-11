@@ -1,5 +1,6 @@
 import React from 'react';
 import ListWrapper from './components/ListWrapper/ListWrapper';
+import Form from './components/Form/Form';
 import './index.css';
 import carImage from './assets/images/car.png';
 import planeImage from './assets/images/plane.png';
@@ -164,11 +165,18 @@ class App extends React.Component {
                 items: [...initialStateItems],
         }
 
+        addItem = (e) => {
+            e.preventDefault();
+        }
+
         render() {
                 return(
                         <div>
                                 <ListWrapper 
-                                        items={this.state.items} 
+                                    items={this.state.items} 
+                                />
+                                <Form 
+                                    submitFn={this.addItem}
                                 />
                         </div>
                 )
