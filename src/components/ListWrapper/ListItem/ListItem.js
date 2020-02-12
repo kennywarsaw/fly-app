@@ -1,5 +1,6 @@
 import React from 'react';
-import './ListItem.css';
+import PropTypes from "prop-types";
+import styles from './ListItem.module.scss';
 
 const ListItem = ({
     date,
@@ -8,17 +9,28 @@ const ListItem = ({
     arrival,
     country
 }) => (
-    <li className="listItem__wrapper">
-        <div className="listItem__left">
-            <div className="listItem__date">{date || 'I dont know'}</div>
-            <div className="listItem__departure">{departure}</div>
+    <li className={styles.wrapper}>
+        <div className={styles.left}>
+            <div className={styles.date}>{date}</div>
+            <div className={styles.departure}>{departure || 'Warsaw'}</div>
         </div>
-        <img src={image} alt="" className="listItem__image" />
-        <div className="listItem__right">
-            <div className="listItem__arrival">{arrival}</div>
-            <div className="listItem__country">{country}</div>
+        <img src={image} alt="" className={styles.image} />
+        <div className={styles.right}>
+            <div className={styles.arrival}>{arrival}</div>
+            <div className={styles.country}>{country}</div>
         </div>
     </li>
 );
+
+ListItem.propTypes = {
+    date: PropTypes.string.isRequired,
+    departure: PropTypes.string.isRequired,
+    arrival: PropTypes.string.isRequired,
+    country: PropTypes.string.isRequired,
+};
+
+ListItem.defaultProps = {
+    departure: "Warsaw",
+};
 
 export default ListItem;

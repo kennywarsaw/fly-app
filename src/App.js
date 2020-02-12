@@ -1,7 +1,7 @@
 import React from 'react';
 import ListWrapper from './components/ListWrapper/ListWrapper';
 import Form from './components/Form/Form';
-import './index.css';
+import styles from './index.module.scss';
 import carImage from './assets/images/car.png';
 import planeImage from './assets/images/plane.png';
 
@@ -167,11 +167,24 @@ class App extends React.Component {
 
         addItem = (e) => {
             e.preventDefault();
+            
+            const newItem = {
+                date: e.target[0].value,
+                departure: e.target[1].value,
+                arrival: e.target[2].value,
+                country: e.target[3].value,
+            }
+
+            this.setState(prevState => ({
+                items: [newItem, ...prevState.items],
+            }));
+
+            e.target.reset();
         }
 
         render() {
                 return(
-                        <div>
+                        <div className={styles.div}>
                                 <ListWrapper 
                                     items={this.state.items} 
                                 />
