@@ -8,23 +8,23 @@ const Form = ({submitFn}) => (
         <form autoComplete="off" className={styles.form} onSubmit={submitFn}>
             <Input
                 name="date"
-                label="label"
-                maxLength="30"
+                label="Date"
+                maxLength={30}
             />
             <Input
                 name="deparature"
-                label="label"
-                maxLength="30"
+                label="Deparature"
+                maxLength={30}
             />
             <Input
                 name="arrival"
-                label="label"
-                maxLength="30"
+                label="Arrival"
+                maxLength={30}
             />
             <Input
                 name="country"
-                label="label"
-                maxLength="30"
+                label="Country"
+                maxLength={30}
             />
             <button className={styles.button} type="submit">add travel</button>
         </form>

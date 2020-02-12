@@ -22,3 +22,13 @@ $white: #fff;
     justify-content: center;
     align-items: flex-start;
 }
+
+.button {
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: $black;
+    border: none;
+    border-radius: 4px;
+    color: $white;
+}

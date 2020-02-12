@@ -1,5 +1,5 @@
 import React from 'react';
-import ListWrapper from './components/ListWrapper/ListWrapper';
+import List from './components/List/List';
 import Form from './components/Form/Form';
 import styles from './index.module.scss';
 import carImage from './assets/images/car.png';
@@ -185,7 +185,7 @@ class App extends React.Component {
         render() {
                 return(
                         <div className={styles.div}>
-                                <ListWrapper 
+                                <List 
                                     items={this.state.items} 
                                 />
                                 <Form 

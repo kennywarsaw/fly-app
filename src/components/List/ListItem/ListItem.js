@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import styles from './ListItem.module.scss';
+import planeImage from '../../../assets/images/plane.png';
 
 const ListItem = ({
     date,
     departure,
-    image,
     arrival,
-    country
+    country,
+    image
 }) => (
     <li className={styles.wrapper}>
         <div className={styles.left}>
@@ -27,10 +28,12 @@ ListItem.propTypes = {
     departure: PropTypes.string.isRequired,
     arrival: PropTypes.string.isRequired,
     country: PropTypes.string.isRequired,
+    image: PropTypes.string
 };
 
 ListItem.defaultProps = {
     departure: "Warsaw",
+    image: planeImage,
 };
 
 export default ListItem;

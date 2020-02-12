@@ -1,3 +1,7 @@
+$yellow: #fed42d;
+$black: #000;
+$white: #fff;
+
 .formItem {
     width: 100%;
     margin: 24px 0;
@@ -48,14 +52,4 @@
 
 .input:focus ~ .itemBar {
     background: $yellow;
-}
-
-.button {
-    font-size: 12px;
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: $black;
-    border: none;
-    border-radius: 4px;
-    color: $white;
 }
