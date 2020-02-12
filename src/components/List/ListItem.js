@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import styles from './ListItem.module.scss';
-import planeImage from '../../../assets/images/plane.png';
+import planeImage from '../../assets/images/plane.png';
 
 const ListItem = ({
     date,
