@@ -1,6 +1,7 @@
 import React from 'react';
 import List from './components/List/List';
 import Form from './components/Form/Form';
+import Button from './components/Add/Button';
 import styles from './index.module.scss';
 import carImage from './assets/images/car.png';
 import planeImage from './assets/images/plane.png';
@@ -185,6 +186,7 @@ class App extends React.Component {
         render() {
                 return(
                         <div className={styles.div}>
+                                <Button />
                                 <List 
                                     items={this.state.items} 
                                 />

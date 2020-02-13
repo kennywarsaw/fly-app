@@ -1,0 +1,20 @@
+$yellow: #fed42d;
+$black: #000;
+$white: #fff;
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    font-size: 14px;
+    font-weight: 300;;
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: rgba($black, 0.035);
+    border: none;
+    border-radius: 8px 8px 0 0;
+    color: $black;
+}
