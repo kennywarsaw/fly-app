@@ -1,8 +1,10 @@
 import React from 'react';
+import styles from './index.module.scss';
+import AppContext from './context';
 import List from './components/List/List';
 import Form from './components/Form/Form';
 import Button from './components/Add/Button';
-import styles from './index.module.scss';
+import Modal from './components/Add/Modal';
 import carImage from './assets/images/car.png';
 import planeImage from './assets/images/plane.png';
 
@@ -164,6 +166,7 @@ const initialStateItems = [
 class App extends React.Component {
         state = {
                 items: [...initialStateItems],
+                isModalOpen: false,
         }
 
         addItem = (e) => {
@@ -183,16 +186,39 @@ class App extends React.Component {
             e.target.reset();
         }
 
+        openModal = () => {
+            this.setState({
+                isModalOpen: true,
+            })
+        }
+
+        closeModal = () => {
+            this.setState({
+                isModalOpen: false,
+            })
+        }
+
         render() {
+
+            const { isModalOpen } = this.state;
+            const contextElements = {
+                ...this.state,
+                addItem: this.addItem
+            }
                 return(
                         <div className={styles.div}>
-                                <Button />
+                            <AppContext.Provider value={contextElements}>
+                                <Button 
+                                    openModalFn={this.openModal}
+                                />
+                            </AppContext.Provider>
                                 <List 
                                     items={this.state.items} 
                                 />
                                 <Form 
                                     submitFn={this.addItem}
                                 />
+                                { isModalOpen && <Modal closeModalFn={this.closeModal} /> }
                         </div>
                 )
         }

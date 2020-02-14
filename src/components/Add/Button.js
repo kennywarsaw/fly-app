@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Button.module.scss';
 
-const Button = ({ href }) => (
+const Button = ({ href, openModalFn }) => (
     <div className={styles.wrapper}>
         <>
             {
@@ -15,7 +15,10 @@ const Button = ({ href }) => (
                         add travel
                     </a>
                 ) : (
-                    <button className={styles.button}>
+                    <button 
+                        className={styles.button}
+                        onClick={openModalFn}
+                    >
                         add travel
                     </button>
                 )
