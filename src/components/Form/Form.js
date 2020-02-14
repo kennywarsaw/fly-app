@@ -11,7 +11,7 @@ const Form = ({submitFn}) => (
             <form 
                 autoComplete="off" 
                 className={styles.form} 
-                onSubmit={context}
+                onSubmit={context.addItem}
             >
                 <Input
                     name="date"
