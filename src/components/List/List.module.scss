@@ -25,11 +25,6 @@ $white: #fff;
 @media only screen and (max-width: 812px) {
     .wrapper {
         width: 100vw;
-    }
-    .date, .country {
-        display: none;
-    }
-    .departure, .arrival {
-        font-size: 16px;;
+        overflow:hidden;
     }
 }

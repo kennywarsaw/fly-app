@@ -54,3 +54,16 @@ $white: #fff;
 .closeButton:hover::before, .closeButton:hover::after {
   background: $white;
 }
+
+@media only screen and (max-width: 812px) {
+  .wrapper {
+      width: 80vw;
+  }
+
+  .closeButton {
+    width: 27px;
+    height: 27px;
+    right: 10px;
+    top: 10px;
+  }
+}

@@ -14,3 +14,9 @@ body {
     width: 50vw;
     margin: 35px auto;
 }
+
+@media only screen and (max-width: 812px) {
+    .div {
+        width: 100vw;
+    }
+}

@@ -53,3 +53,10 @@ $white: #fff;
 .input:focus ~ .itemBar {
     background: $white;
 }
+
+@media only screen and (max-width: 812px) {
+    .formItem {
+        width: 80%;
+        margin: 24px auto;
+    }
+}
