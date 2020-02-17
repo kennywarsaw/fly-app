@@ -4,7 +4,7 @@ import styles from './List.module.scss';
 
 const List = (props) => (
             <ul className={styles.wrapper}>
-                {props.listItems.map(item => (
+                {props.items.map(item => (
                     <ListItem key={item.arrival} {...item} />
                 ))}
             </ul>
