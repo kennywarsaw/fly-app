@@ -10,6 +10,22 @@ import planeImage from './assets/images/plane.png';
 const initialStateItems = [
     {
         image: planeImage,
+        date: 'September 2022',
+        departure: 'Cancún',
+        arrival: 'Mexico City',
+        country: 'Mexico',
+        link: '',
+    },
+    {
+        image: planeImage,
+        date: 'August 2022',
+        departure: 'Warsaw',
+        arrival: 'Cancún',
+        country: 'Mexico',
+        link: '',
+    },
+    {
+        image: planeImage,
         date: 'August 2020',
         departure: 'Warsaw',
         arrival: 'Barcelona',
