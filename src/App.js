@@ -10,6 +10,22 @@ import planeImage from './assets/images/plane.png';
 const initialStateItems = [
     {
         image: planeImage,
+        date: 'December 2023',
+        departure: 'Warsaw',
+        arrival: 'Marbella',
+        country: 'Spain',
+        link: '',
+    },
+    {
+        image: planeImage,
+        date: 'November 2023',
+        departure: 'Warsaw',
+        arrival: 'Marrakech',
+        country: 'Morocco',
+        link: '',
+    },
+    {
+        image: planeImage,
         date: 'September 2023',
         departure: 'Warsaw',
         arrival: 'Havana',
