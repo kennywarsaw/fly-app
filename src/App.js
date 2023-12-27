@@ -10,6 +10,14 @@ import planeImage from './assets/images/plane.png';
 const initialStateItems = [
     {
         image: planeImage,
+        date: 'January 2024',
+        departure: 'Warsaw',
+        arrival: 'London',
+        country: 'United Kingdom',
+        link: '',
+    },
+    {
+        image: planeImage,
         date: 'December 2023',
         departure: 'Warsaw',
         arrival: 'Marbella',
